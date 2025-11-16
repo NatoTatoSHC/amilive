@@ -22,7 +22,7 @@
             req.onload = function() {
                 if (req.status >= 200 && req.status < 400) {
                     var data = JSON.parse(req.responseText);
-                    if(!data.version.includes("Offline")) {
+                    if(!data.version.name_clean.includes("Offline")) {
                         line.innerHTML = "Online";
                         line.style.backgroundColor = "lightgreen";
                         players.innerHTML = data.players.online + "/" + data.players.max;
@@ -52,4 +52,5 @@
     </body>
 
 </html>
+
 
