@@ -18,7 +18,7 @@
             var icon = document.getElementById("icon");
             
             var req = new XMLHttpRequest();
-            req.open('GET', 'https://api.mcsrvstat.us/3/rizzysigma84.aternos.me',true);
+            req.open('GET', 'https://api.mcstatus.io/v2/status/java/rizzysigma84.aternos.me',true);
             req.onload = function() {
                 if (req.status >= 200 && req.status < 400) {
                     var data = JSON.parse(req.responseText);
@@ -52,3 +52,4 @@
     </body>
 
 </html>
+
