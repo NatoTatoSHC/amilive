@@ -29,7 +29,7 @@
                         console.log(data.players.online);
                         data.players.list.forEach(player => {
                             var newli = document.createElement("li");
-                            newli.innerHTML = player.name;
+                            newli.innerHTML = player.name_clean;
                             newli.style.border = "2px solid black";
                             newli.style.fontSize = "x-large";
                             playerlist.appendChild(newli);
